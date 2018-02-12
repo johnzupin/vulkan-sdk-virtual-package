@@ -8,18 +8,18 @@ Standards-Version: 3.9.8
 
 Package: lunarg-vulkan-sdk
 Architecture: all
-Depends: libvulkan1,
- libvulkan-dev,
- lunarg-via,
- lunarg-vktrace,
- lunarg-vulkan-layers,
- lunarg-vulkan-sdk-docs,
- lunarg-vulkan-tutorial,
- shaderc,
- spirv-cross,
- vulkan-glslang,
- vulkan-spirv-tools,
- vulkan-utils
+Depends: libvulkan1 (>= 1.0.65),libvulkan1 (<< 1.0.66),
+ libvulkan-dev(>= 1.0.65),libvulkan-dev (<< 1.0.66),
+ lunarg-via(>= 1.0.65),
+ lunarg-vktrace(>= 1.0.65),
+ lunarg-vulkan-layers(>= 1.0.65),lunarg-vulkan-layers (<< 1.0.66),
+ lunarg-vulkan-sdk-docs(>= 1.0.65),lunarg-vulkan-sdk-docs (<< 1.0.66),
+ lunarg-vulkan-tutorial(>= 1.0.65),lunarg-vulkan-tutorial (<< 1.0.66),
+ shaderc (>= 2017.10.27),
+ spirv-cross (>= 2018.01.09),
+ vulkan-glslang (>= 1.0.65),vulkan-glslang (<< 1.0.66),
+ vulkan-spirv-tools (>= 1.0.65),vulkan-spirv-tools (<< 1.0.66),
+ vulkan-utils (>= 1.0.65),vulkan-utils (<< 1.0.66)
 Description: Tools and runtime for Vulkan development, put together by LunarG
  The LunarG Vulkan SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
