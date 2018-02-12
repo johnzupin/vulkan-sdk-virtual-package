@@ -1,0 +1,32 @@
+Source: lunarg-vulkan-sdk
+Section: libdevel
+Priority: optional
+Maintainer: Brett Johnson <brett@linuxturtle.net>
+Homepage: https://vulkan.lunarg.com/
+Build-Depends: debhelper (>= 7)
+Standards-Version: 3.9.8
+
+Package: lunarg-vulkan-sdk
+Architecture: all
+Depends: libvulkan1,
+ libvulkan-dev,
+ lunarg-via,
+ lunarg-vktrace,
+ lunarg-vulkan-layers,
+ lunarg-vulkan-sdk-docs,
+ lunarg-vulkan-tutorial,
+ shaderc,
+ spirv-cross,
+ vulkan-glslang,
+ vulkan-spirv-tools,
+ vulkan-utils
+Provides: lunarg-vulkan-sdk
+Multi-Arch: foreign
+Description: Tools and runtime for Vulkan development, put together by LunarG
+ The LunarG Vulkan SDK provides the development and runtime components
+ required to build, run, and debug Vulkan applications. This SDK is
+ based on the Khronos Vulkan API header, whose version is reflected
+ in the Vulkan SDK version number (for example, SDK version 1.0.24.0
+ indicates that the SDK uses Vulkan header revision 1.0.24). The SDK
+ also includes certain Vulkan extensions for window system 
+ integration and debug extensions.
