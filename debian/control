@@ -20,8 +20,6 @@ Depends: libvulkan1,
  vulkan-glslang,
  vulkan-spirv-tools,
  vulkan-utils
-Provides: lunarg-vulkan-sdk
-Multi-Arch: foreign
 Description: Tools and runtime for Vulkan development, put together by LunarG
  The LunarG Vulkan SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
