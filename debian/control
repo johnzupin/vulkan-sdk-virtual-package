@@ -3,23 +3,27 @@ Section: libdevel
 Priority: optional
 Maintainer: Brett Johnson <brett@linuxturtle.net>
 Homepage: https://vulkan.lunarg.com/
-Build-Depends: debhelper (>= 7)
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
 
 Package: lunarg-vulkan-sdk
 Architecture: all
-Depends: libvulkan1 (>= 1.0.65),libvulkan1 (<< 1.0.66),
- libvulkan-dev(>= 1.0.65),libvulkan-dev (<< 1.0.66),
- lunarg-via(>= 1.0.65),
- lunarg-vktrace(>= 1.0.65),
- lunarg-vulkan-layers(>= 1.0.65),lunarg-vulkan-layers (<< 1.0.66),
- lunarg-vulkan-sdk-docs(>= 1.0.65),lunarg-vulkan-sdk-docs (<< 1.0.66),
- lunarg-vulkan-tutorial(>= 1.0.65),lunarg-vulkan-tutorial (<< 1.0.66),
- shaderc (>= 2017.10.27),
- spirv-cross (>= 2018.01.09),
- vulkan-glslang (>= 1.0.65),vulkan-glslang (<< 1.0.66),
- vulkan-spirv-tools (>= 1.0.65),vulkan-spirv-tools (<< 1.0.66),
- vulkan-utils (>= 1.0.65),vulkan-utils (<< 1.0.66)
+Depends: libvulkan1 (>= ${source:Upstream-Version})
+ vulkan-headers (>= ${source:Upstream-Version}),
+ vulkan-validation-layers (>= ${source:Upstream-Version}),
+ vulkan-validation-layers-dev (>= ${source:Upstream-Version}),
+ vulkan-tools (>= ${source:Upstream-Version}),
+ lunarg-tools (>= ${source:Upstream-Version}),
+ lunarg-via (>= ${source:Upstream-Version}),
+ lunarg-vktrace (>= ${source:Upstream-Version}),
+ lunarg-vulkan-layers (>= ${source:Upstream-Version}),
+ lunarg-vulkan-tutorial (>= ${source:Upstream-Version}),
+ spirv-headers (>= 1.3.32),
+ spirv-tools (>= 2018.4),
+ spirv-cross (>= 2018.07.26),
+ glslang-tools (>= 6.2.2596),
+ glslang-dev (>= 6.2.2596),
+ shaderc (>= 2018.0~dev)
 Description: Tools and runtime for Vulkan development, put together by LunarG
  The LunarG Vulkan SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is

@@ -1,5 +1,11 @@
-lunarg-vulkan-sdk (1.0.65.2) UNRELEASED; urgency=low
+lunarg-vulkan-sdk (1.1.82.0-1) UNRELEASED; urgency=medium
+
+  * new upstream version
+
+ -- Brett Johnson <brett@linuxturtle.net>  Mon, 13 Aug 2018 10:49:27 -0600
+
+lunarg-vulkan-sdk (1.0.65.2) unstable; urgency=low
 
   * First version
 
- -- Brett Johnson <brett@linuxturtle.net>  Mon, 12 Feb 2018 14:29:12 -0700
+ -- Brett Johnson <brett@linuxturtle.net>  Wed, 14 Feb 2018 10:44:44 -0700
