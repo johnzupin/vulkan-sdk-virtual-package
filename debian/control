@@ -9,9 +9,10 @@ Standards-Version: 3.9.8
 Package: lunarg-vulkan-sdk
 Architecture: all
 Depends: libvulkan1 (>= ${source:Upstream-Version}),
+ libvulkan-dev (>= ${source:Upstream-Version}),
  vulkan-headers (>= ${source:Upstream-Version}),
- vulkan-validation-layers (>= ${source:Upstream-Version}),
- vulkan-validation-layers-dev (>= ${source:Upstream-Version}),
+ vulkan-validationlayers (>= ${source:Upstream-Version}),
+ vulkan-validationlayers-dev (>= ${source:Upstream-Version}),
  vulkan-tools (>= ${source:Upstream-Version}),
  lunarg-via (>= ${source:Upstream-Version}),
  lunarg-vktrace (>= ${source:Upstream-Version}),
