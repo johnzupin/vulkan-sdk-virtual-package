@@ -5,18 +5,21 @@ together easily.  It contains no content of its own, just dependencies.
 
 The packages which make up the LunarG SDK are:
 
-Depends: libvulkan1,
- libvulkan-dev,
- lunarg-via,
- lunarg-vktrace,
- lunarg-vulkan-layers,
- lunarg-vulkan-sdk-docs,
- lunarg-vulkan-tutorial,
- shaderc,
- spirv-cross,
- vulkan-glslang,
- vulkan-spirv-tools,
- vulkan-utils
+ - libvulkan1
+ - libvulkan-dev
+ - vulkan-headers
+ - vulkan-validationlayers
+ - vulkan-validationlayers-dev
+ - vulkan-tools
+ - lunarg-via
+ - lunarg-vktrace
+ - lunarg-vulkan-layers
+ - spirv-headers
+ - spirv-tools
+ - spirv-cross
+ - glslang-tools
+ - glslang-dev
+ - shaderc
 
 More information about the LunarG SDK can be found on LunarG's SDK website:
 
