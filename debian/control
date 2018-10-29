@@ -31,3 +31,17 @@ Description: Tools and runtime for Vulkan development, put together by LunarG
  indicates that the SDK uses Vulkan header revision 1.0.24). The SDK
  also includes certain Vulkan extensions for window system 
  integration and debug extensions.
+
+Package: lunarg-vulkan-sdk-dbgsym
+Architecture: all
+Depends: libvulkan1-dbgsym (>= ${source:Upstream-Version}),
+ vulkan-validationlayers-dbgsym (>= ${source:Upstream-Version}),
+ vulkan-tools-dbgsym (>= ${source:Upstream-Version}),
+ lunarg-via-dbgsym (>= ${source:Upstream-Version}),
+ lunarg-vktrace-dbgsym (>= ${source:Upstream-Version}),
+ lunarg-vulkan-layers-dbgsym (>= ${source:Upstream-Version}),
+ spirv-tools-dbgsym (>= 2018.5+41),
+ spirv-cross-dbgsym (>= 2018.08.07+114),
+ glslang-tools-dbgsym (>= 7.9.2888+30),
+ shaderc-dbgsym (>= 2018.0~dev+35)
+Description: Debugging symbol packages for the LunarG Vulkan SDK components
