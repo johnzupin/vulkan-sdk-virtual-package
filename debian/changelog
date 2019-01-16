@@ -1,8 +1,8 @@
-lunarg-vulkan-sdk (1.1.92.0~rc1-1) UNRELEASED; urgency=medium
+lunarg-vulkan-sdk (1.1.92.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
   * new upstream version
 
- -- Jeremy Hayes <jeremy@centaurus>  Thu, 15 Nov 2018 18:51:21 -0700
+ -- Jeremy Hayes <jeremy@centaurus>  Thu, 15 Nov 2018 18:51:52 -0700
 
 lunarg-vulkan-sdk (1.1.85.0-2) unstable; urgency=medium
 
