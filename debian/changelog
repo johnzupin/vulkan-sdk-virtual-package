@@ -1,3 +1,9 @@
+vulkan-sdk (1.1.101.0~rc1-1lunarg16.04.1) UNRELEASED; urgency=medium
+
+  * Change package name to remove lunarg
+
+ -- johnz <johnz@neon>  Wed, 27 Mar 2019 16:01:39 -0600
+
 lunarg-vulkan-sdk (1.1.101.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
   * Automated package build

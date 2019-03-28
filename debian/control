@@ -1,12 +1,14 @@
-Source: lunarg-vulkan-sdk
+Source: vulkan-sdk
 Section: libdevel
 Priority: optional
 Maintainer: Brett Johnson <brett@linuxturtle.net>
-Homepage: https://vulkan.lunarg.com/
+Homepage: https://khronos.com/
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
 
-Package: lunarg-vulkan-sdk
+Package: vulkan-sdk
+Replaces: lunarg-vulkan-sdk  (<= 1.1.101.0~rc1-1lunarg16.04.1.1)
+Breaks: lunarg-vulkan-sdk  (<= 1.1.101.0~rc1-1lunarg16.04.1.1)
 Architecture: all
 Depends: libvulkan1 (>= ${source:Upstream-Version}),
  libvulkan-dev (>= ${source:Upstream-Version}),
@@ -24,8 +26,8 @@ Depends: libvulkan1 (>= ${source:Upstream-Version}),
  glslang-tools (>= 7.11.3113+32),
  glslang-dev (>= 7.11.3113+32),
  shaderc (>= 2018.0~dev+88)
-Description: Tools and runtime for Vulkan development, put together by LunarG
- The LunarG Vulkan SDK provides the development and runtime components
+Description: Tools and runtime for Vulkan development.The Vulkan
+ SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
  based on the Khronos Vulkan API header, whose version is reflected
  in the Vulkan SDK version number (for example, SDK version 1.0.24.0
@@ -33,7 +35,9 @@ Description: Tools and runtime for Vulkan development, put together by LunarG
  also includes certain Vulkan extensions for window system 
  integration and debug extensions.
 
-Package: lunarg-vulkan-sdk-dbgsym
+Package: vulkan-sdk-dbgsym
+Replaces: lunarg-vulkan-sdk (<= 1.1.101.0~rc1-1lunarg16.04.1.1)
+Breaks: lunarg-vulkan-sdk (<= 1.1.101.0~rc1-1lunarg16.04.1.1)
 Architecture: all
 Depends: libvulkan1-dbgsym (>= ${source:Upstream-Version}),
  vulkan-validationlayers-dbgsym (>= ${source:Upstream-Version}),
@@ -46,4 +50,20 @@ Depends: libvulkan1-dbgsym (>= ${source:Upstream-Version}),
  spirv-cross-dbgsym (>= 2019.02.20+30),
  glslang-tools-dbgsym (>= 7.11.3113+32),
  shaderc-dbgsym (>= 2018.0~dev+88)
-Description: Debugging symbol packages for the LunarG Vulkan SDK components
+Description: Debugging symbol packages for the Vulkan SDK components
+
+Package: lunarg-vulkan-sdk
+Depends: vulkan-sdk (>= 1.1.101.0~rc1-1lunarg16.04.1.1), ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Priority: optional
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: lunarg-vulkan-sdk-dbgsym
+Depends: vulkan-sdk-dbgsym (>= 1.1.101.0~rc1-1lunarg16.04.1.1), ${misc:Depends}
+Architecture: all
+Section: oldlibs
+Priority: optional
+Description: transitional package
+ This is a transitional package. It can safely be removed.
