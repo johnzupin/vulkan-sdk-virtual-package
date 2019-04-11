@@ -1,8 +1,15 @@
-vulkan-sdk (1.1.101.0~rc1-1lunarg16.04.1) UNRELEASED; urgency=medium
+vulkan-sdk (1.1.106.0~rc1-1) UNRELEASED; urgency=medium
 
+  * new 1.1.106.0~rc1 sdk
+
+ -- John Zupin <john@odin>  Wed, 10 Apr 2019 19:53:14 -0600
+
+vulkan-sdk (1.1.101.0~rc1-1lunarg16.04.1) unstable; urgency=medium
+
+  [ johnz ]
   * Change package name to remove lunarg
 
- -- johnz <johnz@neon>  Wed, 27 Mar 2019 16:01:39 -0600
+ -- John Zupin <john@odin>  Wed, 10 Apr 2019 19:53:14 -0600
 
 lunarg-vulkan-sdk (1.1.101.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
