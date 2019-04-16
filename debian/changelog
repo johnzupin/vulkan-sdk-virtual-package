@@ -1,8 +1,8 @@
-vulkan-sdk (1.1.106.0~rc2-1) UNRELEASED; urgency=medium
+vulkan-sdk (1.1.106.0~rc2-1lunarg16.04.1.1) xenial; urgency=medium
 
   * new 1.1.106.0~rc2 package
 
- -- John Zupin <john@odin>  Mon, 15 Apr 2019 17:44:26 -0600
+ -- John Zupin <john@odin>  Mon, 15 Apr 2019 17:44:48 -0600
 
 vulkan-sdk (1.1.106.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
