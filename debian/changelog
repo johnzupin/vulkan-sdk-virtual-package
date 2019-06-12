@@ -1,8 +1,14 @@
+vulkan-sdk (1.1.108.0~rc1-1ubuntu16.04.1.1) xenial; urgency=medium
+
+  * New 1.1.108.0~rc1 SDK
+
+ -- John Zupin <john@odin>  Tue, 11 Jun 2019 19:56:33 -0600
+
 vulkan-sdk (1.1.106.0~rc2-1lunarg16.04.1.1) xenial; urgency=medium
 
   * new 1.1.106.0~rc2 package
 
- -- John Zupin <john@odin>  Mon, 15 Apr 2019 17:44:48 -0600
+ -- John Zupin <john@odin>  Tue, 11 Jun 2019 19:56:09 -0600
 
 vulkan-sdk (1.1.106.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
