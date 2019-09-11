@@ -1,9 +1,9 @@
-lunarg-vulkan-sdk
+vulkan-sdk
 
-This is a meta package to install all the components of LunarG's Vulkan SDK
+This is a meta package to install all the components of the Vulkan SDK
 together easily.  It contains no content of its own, just dependencies.
 
-The packages which make up the LunarG SDK are:
+The packages which make up the Vulkan SDK are:
 
  - libvulkan1
  - libvulkan-dev
@@ -21,6 +21,10 @@ The packages which make up the LunarG SDK are:
  - glslang-dev
  - shaderc
 
-More information about the LunarG SDK can be found on LunarG's SDK website:
+More information about this SDK can be found on LunarG's SDK website:
 
 https://vulkan.lunarg.com/sdk/home
+
+The Getting Started Guide for the Ubuntu SDK can be found at:
+
+https://vulkan.lunarg.com/doc/sdk/latest/linux/getting_started_ubuntu.html
