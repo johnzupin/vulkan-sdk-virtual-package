@@ -1,8 +1,8 @@
-vulkan-sdk (1.1.121.0~rc1-1) UNRELEASED; urgency=medium
+vulkan-sdk (1.1.121.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
   * Automated package build
 
- -- John Zupin <john@odin>  Tue, 10 Sep 2019 10:53:13 -0600
+ -- John Zupin <john@odin>  Tue, 10 Sep 2019 10:54:02 -0600
 
 vulkan-sdk (1.1.114.0~rc1-1lunarg16.04.1.1) xenial; urgency=medium
 
