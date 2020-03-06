@@ -21,6 +21,7 @@ Depends: libvulkan-dev (>= ${source:Upstream-Version}),
  spirv-headers (>= 1.5.1+16),
  spirv-tools (>= 2019.5+24),
  spirv-cross (>= 2020.01.16),
+ spirv-cross-dev (>= 2020.01.16),
  glslang-tools (>= 8.13.3559+16),
  glslang-dev (>= 8.13.3559+16),
  shaderc (>= 2019.0+175)
