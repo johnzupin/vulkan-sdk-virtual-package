@@ -18,13 +18,13 @@ Depends: libvulkan-dev (>= ${source:Upstream-Version}),
  lunarg-vkconfig (>= ${source:Upstream-Version}),
  lunarg-vktrace (>= ${source:Upstream-Version}),
  lunarg-vulkan-layers (>= ${source:Upstream-Version}),
- spirv-headers (>= 1.5.1+37),
- spirv-tools (>= 2020.2),
- spirv-cross (>= 2020.02.26+22),
- spirv-cross-dev (>= 2020.02.26+22),
- glslang-tools (>= 8.13.3559+168),
- glslang-dev (>= 8.13.3559+168),
- shaderc (>= 2019.1+28)
+ spirv-headers (>= 1.5.3+2),
+ spirv-tools (>= 2020.3),
+ spirv-cross (>= 2020.05.19+18),
+ spirv-cross-dev (>= 2020.05.19+18),
+ glslang-tools (>= 8.13.3743+37),
+ glslang-dev (>= 8.13.3743+37),
+ shaderc (>= 2020.0)
 Description: Tools and runtime for Vulkan development.The Vulkan
  SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
@@ -45,10 +45,10 @@ Depends: libvulkan1-dbgsym (>= ${source:Upstream-Version}),
  lunarg-vkconfig-dbgsym (>= ${source:Upstream-Version}),
  lunarg-vktrace-dbgsym (>= ${source:Upstream-Version}),
  lunarg-vulkan-layers-dbgsym (>= ${source:Upstream-Version}),
- spirv-tools-dbgsym (>= 2020.2),
- spirv-cross-dbgsym (>= 2020.02.26+22),
- glslang-tools-dbgsym (>= 8.13.3559+168),
- shaderc-dbgsym (>= 2019.1+28)
+ spirv-tools-dbgsym (>= 2020.3),
+ spirv-cross-dbgsym (>= 2020.05.19+18),
+ glslang-tools-dbgsym (>= 8.13.3743+37),
+ shaderc-dbgsym (>= 2020.0)
 Description: Debugging symbol packages for the Vulkan SDK components
 
 Package: lunarg-vulkan-sdk
