@@ -25,7 +25,7 @@ Depends: libvulkan-dev (>= 1.2.141.0~rc1),
  glslang-tools (>= 8.13.3743+37),
  glslang-dev (>= 8.13.3743+37),
  shaderc (>= 2020.0),
- gfxreconstruct (>= 0.9.0+12)
+ lunarg-gfxreconstruct (>= 0.9.0+19)
 Description: Tools and runtime for Vulkan development.The Vulkan
  SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
@@ -50,7 +50,7 @@ Depends: libvulkan1-dbgsym (>= 1.2.141.0~rc1),
  spirv-cross-dbgsym (>= 2020.05.19+18),
  glslang-tools-dbgsym (>= 8.13.3743+37),
  shaderc-dbgsym (>= 2020.0),
- gfxreconstruct-dbgsym (>= 0.9.0+12)
+ lunarg-gfxreconstruct-dbgsym (>= 0.9.0+19)
 Description: Debugging symbol packages for the Vulkan SDK components
 
 Package: lunarg-vulkan-sdk
