@@ -1,3 +1,12 @@
+vulkan-sdk (1.2.148.0-1lunarg20.04-1) focal; urgency=medium
+
+  * copyright: updated for release
+  * removed debian files
+  * update version for 148 package release
+  * remove vktrace
+
+ -- John Zupin <john@odin>  Mon, 27 Jul 2020 18:39:26 -0600
+
 vulkan-sdk (1.2.141.0~rc4-1lunarg16.04.1.1) xenial; urgency=medium
 
   * Automated package build
