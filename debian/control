@@ -52,19 +52,3 @@ Depends: libvulkan1-dbgsym (>= 1.2.148.0),
  lunarg-gfxreconstruct-dbgsym (>= 0.9.1+45),
  dxc-dbgsym (>= 1.4.0.2274-361)
 Description: Debugging symbol packages for the Vulkan SDK components
-
-Package: lunarg-vulkan-sdk
-Depends: vulkan-sdk (>> 1.1.101.0~rc1-1lunarg16.04.1.1), ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Priority: optional
-Description: transitional package
- This is a transitional package. It can safely be removed.
-
-Package: lunarg-vulkan-sdk-dbgsym
-Depends: vulkan-sdk-dbgsym (>> 1.1.101.0~rc1-1lunarg16.04.1.1), ${misc:Depends}
-Architecture: all
-Section: oldlibs
-Priority: optional
-Description: transitional package
- This is a transitional package. It can safely be removed.
