@@ -1,3 +1,10 @@
+vulkan-sdk (1.2.148.0-1ubuntu20.04-2) focal; urgency=medium
+
+  * control: remove transitional packages
+  * control: require vulkan-headers
+
+ -- John Zupin <john@odin>  Wed, 05 Aug 2020 14:52:26 -0600
+
 vulkan-sdk (1.2.148.0-1lunarg20.04-1) focal; urgency=medium
 
   * copyright: updated for release
