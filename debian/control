@@ -10,7 +10,8 @@ Package: vulkan-sdk
 Replaces: lunarg-vulkan-sdk  (<= 1.1.101.0~rc1-1lunarg16.04.1.1)
 Breaks: lunarg-vulkan-sdk  (<= 1.1.101.0~rc1-1lunarg16.04.1.1)
 Architecture: all
-Depends: libvulkan-dev (>= 1.2.148.0),
+Depends: vulkan-headers (>= 1.2.148.0),
+ libvulkan-dev (>= 1.2.148.0),
  vulkan-validationlayers (>= 1.2.148.0),
  vulkan-validationlayers-dev (>= 1.2.148.0),
  vulkan-tools (>= 1.2.148.0),
