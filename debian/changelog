@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.162.0-1lunarg18.04-2) bionic; urgency=medium
+
+  * UNRELEASED
+
+ -- John Zupin <john@odin>  Wed, 09 Dec 2020 11:13:47 -0700
+
 vulkan-sdk (1.2.162.0-1lunarg18.04-1) bionic; urgency=medium
 
   * update for 1.2.162.0 SDK
