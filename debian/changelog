@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.162.1~rc2-1lunarg20.04-1) focal; urgency=medium
+
+  * packaging: update for 1.2.162.1 SDK
+
+ -- John Zupin <john@odin>  Thu, 07 Jan 2021 13:22:46 -0700
+
 vulkan-sdk (1.2.162.1~rc1-1lunarg20.04-1) focal; urgency=medium
 
   * packaging: update for 1.2.162.1 SDK
