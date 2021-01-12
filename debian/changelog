@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.162.1~rc4-1lunarg18.04-1) bionic; urgency=medium
+
+  * packaging: updated for new 1.2.162.1 spins
+
+ -- John Zupin <john@odin>  Tue, 12 Jan 2021 11:11:11 -0700
+
 vulkan-sdk (1.2.162.1~rc3-1lunarg18.04-1) bionic; urgency=medium
 
   * packaging: updated for lunarg-tools spin
