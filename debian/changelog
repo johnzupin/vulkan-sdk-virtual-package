@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.170.0~rc3-1lunarg18.04-1) bionic; urgency=medium
+
+  * packaging: updated new 170 gfxrecon build
+
+ -- John Zupin <john@odin>  Thu, 25 Feb 2021 16:47:59 -0700
+
 vulkan-sdk (1.2.170.0~rc2-1lunarg18.04-1) bionic; urgency=medium
 
   * new 170 spins
