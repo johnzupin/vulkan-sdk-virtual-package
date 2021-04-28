@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.176.0~rc2-1lunarg18.04-1) bionic; urgency=medium
+
+  * update control file for rc2's of 176
+
+ -- John Zupin <john@odin>  Wed, 28 Apr 2021 11:08:22 -0600
+
 vulkan-sdk (1.2.176.0~rc1-1lunarg18.04-1) bionic; urgency=medium
 
   * update control for 1.2.176.0 SDK
