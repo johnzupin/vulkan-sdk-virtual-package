@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.176.0~rc1-1lunarg18.04-1) bionic; urgency=medium
+
+  * update control for 1.2.176.0 SDK
+
+ -- John Zupin <john@odin>  Tue, 27 Apr 2021 18:52:47 -0600
+
 vulkan-sdk (1.2.170.0~rc3-1lunarg18.04-1) bionic; urgency=medium
 
   * packaging: updated new 170 gfxrecon build
