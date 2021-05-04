@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.176.0~rc4-1lunarg20.04-1) focal; urgency=medium
+
+  * New lgvt 176 rc5 package
+
+ -- John Zupin <john@odin>  Tue, 04 May 2021 14:39:52 -0600
+
 vulkan-sdk (1.2.176.0~rc3-1lunarg20.04-1) focal; urgency=medium
 
   * New packages for 1.2.176.0 SDK
