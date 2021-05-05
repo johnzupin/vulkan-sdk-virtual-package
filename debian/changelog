@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.176.0~rc5-1lunarg18.04-1) bionic; urgency=medium
+
+  * update vvl for 1.2.176.1
+
+ -- John Zupin <john@odin>  Wed, 05 May 2021 14:48:36 -0600
+
 vulkan-sdk (1.2.176.0~rc4-1lunarg18.04-1) bionic; urgency=medium
 
   * New lgvt 176 rc5 package
