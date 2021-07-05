@@ -1,3 +1,10 @@
+vulkan-sdk (1.2.182.0~rc2-1lunarg20.04-1) focal; urgency=medium
+
+  * packaging: update control file for 1.2.182.0 SDK
+  * control: update for new 182 packages
+
+ -- John Zupin <john@odin>  Mon, 05 Jul 2021 09:37:54 -0600
+
 vulkan-sdk (1.2.176.0~rc5-1lunarg20.04-1) focal; urgency=medium
 
   * update vvl for 1.2.176.1
