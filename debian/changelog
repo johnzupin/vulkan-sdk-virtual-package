@@ -1,3 +1,10 @@
+vulkan-sdk (1.2.182.0~rc2-1lunarg18.04-1) bionic; urgency=medium
+
+  * packaging: update control file for 1.2.182.0 SDK
+  * control: update for new 182 packages
+
+ -- John Zupin <john@odin>  Mon, 05 Jul 2021 09:37:19 -0600
+
 vulkan-sdk (1.2.176.0~rc5-1lunarg18.04-1) bionic; urgency=medium
 
   * update vvl for 1.2.176.1
