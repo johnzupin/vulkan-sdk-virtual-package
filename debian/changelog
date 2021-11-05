@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.196.0~rc1-1lunarg20.04-1) focal; urgency=medium
+
+  * sdk: testing 196 SDK
+
+ -- John Zupin <john@odin>  Fri, 05 Nov 2021 11:35:33 -0600
+
 vulkan-sdk (1.2.189.0~rc2-1lunarg20.04-1) focal; urgency=medium
 
   * packaging: updated new 1.2.189.0 rc2 packages
