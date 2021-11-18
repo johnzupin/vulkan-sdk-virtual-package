@@ -11,7 +11,7 @@ Replaces: lunarg-vulkan-sdk  (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Breaks: lunarg-vulkan-sdk  (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Architecture: all
 Depends: vulkan-headers (>= 1.2.198.0~rc1),
- libvulkan-dev (>= 1.2.198.0~rc1),
+ libvulkan-dev (>= 1.2.198.0~rc2),
  vulkan-validationlayers (>= 1.2.198.0~rc1),
  vulkan-validationlayers-dev (>= 1.2.198.0~rc1),
  vulkan-tools (>= 1.2.198.0~rc2),
@@ -28,7 +28,7 @@ Depends: vulkan-headers (>= 1.2.198.0~rc1),
  lunarg-gfxreconstruct (>= 0.9.10~rc1),
  dxc (>= 1.4.0.2274-947~rc1),
  spirv-reflect (>= 1.0.0+149~rc1),
- vulkan-extensionlayer (>= 1.2.198.0~rc1)
+ vulkan-extensionlayer (>= 1.2.198.0~rc2)
 Description: Tools and runtime for Vulkan development.The Vulkan
  SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
@@ -42,7 +42,7 @@ Package: vulkan-sdk-dbgsym
 Replaces: lunarg-vulkan-sdk (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Breaks: lunarg-vulkan-sdk (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Architecture: all
-Depends: libvulkan1-dbgsym (>= 1.2.198.0~rc1),
+Depends: libvulkan1-dbgsym (>= 1.2.198.0~rc2),
  vulkan-validationlayers-dbgsym (>= 1.2.198.1~rc1),
  vulkan-tools-dbgsym (>= 1.2.198.0~rc2),
  lunarg-via-dbgsym (>= 1.2.198.0~rc1),
@@ -55,5 +55,5 @@ Depends: libvulkan1-dbgsym (>= 1.2.198.0~rc1),
  lunarg-gfxreconstruct-dbgsym (>= 0.9.10~rc1),
  dxc-dbgsym (>= 1.4.0.2274-947~rc1),
  spirv-reflect-dbgsym (>= 1.0.0+149~rc1),
- vulkan-extensionlayer-dbgsym (>= 1.2.198.0~rc1)
+ vulkan-extensionlayer-dbgsym (>= 1.2.198.0~rc2)
 Description: Debugging symbol packages for the Vulkan SDK components
