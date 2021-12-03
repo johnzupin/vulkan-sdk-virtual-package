@@ -11,7 +11,7 @@ Replaces: lunarg-vulkan-sdk  (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Breaks: lunarg-vulkan-sdk  (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Architecture: all
 Depends: vulkan-headers (>= 1.2.198.0~rc1),
- libvulkan-dev (>= 1.2.198.0~rc2),
+ libvulkan-dev (>= 1.2.198.1~rc1),
  vulkan-validationlayers (>= 1.2.198.0~rc1),
  vulkan-validationlayers-dev (>= 1.2.198.0~rc1),
  vulkan-tools (>= 1.2.198.0~rc2),
@@ -42,7 +42,7 @@ Package: vulkan-sdk-dbgsym
 Replaces: lunarg-vulkan-sdk (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Breaks: lunarg-vulkan-sdk (<= 1.1.101.0~rc2-1lunarg16.04.1.1)
 Architecture: all
-Depends: libvulkan1-dbgsym (>= 1.2.198.0~rc2),
+Depends: libvulkan1-dbgsym (>= 1.2.198.1~rc1),
  vulkan-validationlayers-dbgsym (>= 1.2.198.1~rc1),
  vulkan-tools-dbgsym (>= 1.2.198.0~rc2),
  lunarg-via-dbgsym (>= 1.2.198.0~rc1),
