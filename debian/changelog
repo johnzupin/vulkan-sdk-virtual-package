@@ -1,3 +1,9 @@
+vulkan-sdk (1.2.198.1~rc1-1lunarg20.04-1) focal; urgency=medium
+
+  * new vulkan-loader package for 1.2.198.1
+
+ -- John Zupin <john@odin>  Fri, 03 Dec 2021 14:04:00 -0700
+
 vulkan-sdk (1.2.198.0~rc4-1lunarg20.04-1) focal; urgency=medium
 
   * new VL and VLE rc2's
