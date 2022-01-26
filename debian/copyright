@@ -3,7 +3,7 @@ Upstream-Name: vulkan-sdk
 Source: https://github.com/johnzupin/vulkan-sdk-virtual-package
 
 Files: *
-Copyright: Copyright 2020 LunarG Inc.
+Copyright: Copyright 2022 LunarG Inc.
 License: Apache-2.0
 
 Files: debian/*
