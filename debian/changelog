@@ -1,3 +1,10 @@
+vulkan-sdk (1.3.204.0~rc1-1lunarg18.04-1) bionic; urgency=medium
+
+  * packaging: update copyright
+  * Update for 1.3.204.0 SDK
+
+ -- John Zupin <john@odin>  Wed, 09 Feb 2022 16:36:04 -0700
+
 vulkan-sdk (1.2.198.1~rc1-1lunarg18.04-1) bionic; urgency=medium
 
   * new vulkan-loader package for 1.2.198.1
