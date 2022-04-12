@@ -1,3 +1,10 @@
+vulkan-sdk (1.3.211.0~rc2-1lunarg20.04-1) focal; urgency=medium
+
+  [ John Zupin ]
+  * change rc2 -> rc1 for vulkan-tools
+
+ -- john <john@odin>  Tue, 12 Apr 2022 16:50:10 -0600
+
 vulkan-sdk (1.3.211.0~rc1-1lunarg20.04-1) focal; urgency=medium
 
   [ John Zupin ]
