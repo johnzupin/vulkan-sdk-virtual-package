@@ -1,3 +1,10 @@
+vulkan-sdk (1.3.216.0~rc2-1lunarg18.04-1) bionic; urgency=medium
+
+  [ John Zupin ]
+  * 1.3.216: fix vma version
+
+ -- john <john@odin>  Fri, 10 Jun 2022 09:44:35 -0600
+
 vulkan-sdk (1.3.216.0~rc1-1lunarg18.04-1) bionic; urgency=medium
 
   [ John Zupin ]
