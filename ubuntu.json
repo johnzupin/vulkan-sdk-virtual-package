@@ -1,0 +1,558 @@
+{
+    "LunarGDistros": [ "focal", "jammy" ],
+    "DistroVendor": {
+	"focal": "Ubuntu",
+	"bionic": "Ubuntu",
+	"xenial": "Ubuntu"
+    },
+    "DistroVersion": {
+	"jammy": "22.04",
+	"focal": "20.04",
+	"bionic": "18.04"
+    },
+    "DistroPbuilderOpts": {
+	"xenial": "--extrapackages pkg-create-dbgsym"
+    },
+    "required_packages":
+    [
+	"aptly",
+	"build-essential",
+	"cowbuilder",
+	"debhelper",
+	"devscripts",
+	"git",
+	"gnupg",
+	"gnupg-utils",
+	"jq",
+	"quilt",
+	"python3"
+    ],
+    "repositories":
+    {
+	"spirv-headers":
+	{
+	    "name": "spirv-headers",
+	    "description": "The SPIRV-Headers repository contains machine-readable files for the SPIR-V Registry.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch" : "sdk-1.3.239",
+	    "package_version": "1.6.1+1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the SPIRV-Headers repository.",
+		    "url": "johnzupin/SPIRV-Headers"
+		}
+	    }
+	},
+	"spirv-tools":
+	{
+	    "name": "spirv-tools",
+	    "description": "The SPIRV-Tools repository provides an API and commands for processing SPIR-V modules.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch" : "sdk-1.3.239",
+	    "package_version": "2023.1+1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the SPIRV-Tools repository.",
+		    "url": "johnzupin/SPIRV-Tools"
+		}
+	    },
+	    "dependencies":
+	    [
+		"spirv-headers"
+	    ]
+	},
+	"spirv-cross":
+	{
+	    "name": "spirv-cross",
+	    "description": "The SPIRV-Cross repository provides a tool designed for parsing and converting SPIR-V to other shader languages.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "commit": "sdk-1.3.239",
+	    "package_version": "2021.01.15+588",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the SPIRV-Cross repository.",
+		    "url": "johnzupin/SPIRV-Cross"
+		}
+	    },
+	    "dependencies":
+	    [
+		"spirv-headers"
+	    ]
+	},
+	"glslang":
+	{
+	    "name": "glslang",
+	    "description": "The glslang repository provides an OpenGL and OpenGL ES shader front end and validator.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "12.0.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the glslang repository.",
+		    "url": "johnzupin/glslang"
+		}
+	    },
+	    "dependencies":
+	    [
+		"spirv-headers",
+		"spirv-tools"
+	    ]
+	},
+	"shaderc":
+	{
+	    "name": "shaderc",
+	    "description": "The shaderc repository provides a collection of tools, libraries, and tests for shader compilation.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "commit": "d0b02222f33e1e5e1f521e4e4e1cbfa7fe2cf540",
+	    "package_version": "2023.1",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the shaderc repository.",
+		    "url": "google/shaderc"
+		}
+	    },
+	    "known_good_third_party_commits":
+	    {
+		"glslang": "1fb2f1d7896627d62a289439a2c3e750e551a7ab",
+		"re2": "7107ebc4fbf7205151d8d2a57b2fc6e7853125d4",
+		"effcee": "2ec8f8738118cc483b67c04a759fee53496c5659",
+		"googletest": "d9c309fdab807b716c2cf4d4a42989b8c34f712a",
+		"spirv-headers": "d13b52222c39a7e9a401b44646f0ca3a640fbd47",
+		"spirv-tools": "63de608daeb7e91fbea6d7477a50debe7cac57ce"
+	    }
+	},
+	"vulkan-headers":
+	{
+	    "name": "vulkan-headers",
+	    "description": "The Vulkan-Headers repository provides the Vulkan header files and API registry.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the Vulkan-Headers repository.",
+		    "url": "johnzupin/Vulkan-Headers"
+		}
+	    }
+	},
+	"vulkan-loader":
+	{
+	    "name": "vulkan-loader",
+	    "description": "The Vulkan-Loader repository provides the Vulkan loader.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the Vulkan-Loader repository.",
+		    "url": "johnzupin/Vulkan-Loader"
+		}
+	    },
+	    "dependencies":
+	    [
+		"vulkan-headers"
+	    ]
+	},
+	"vulkan-validationlayers":
+	{
+	    "name": "vulkan-validationlayers",
+	    "description": "The Vulkan-ValidationLayers repository provides the Vulkan validation layers.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the Vulkan-ValidationLayers repository.",
+		    "url": "johnzupin/Vulkan-ValidationLayers"
+		}
+	    },
+	    "dependencies":
+	    [
+		"robin-hood-hashing",
+		"glslang",
+		"vulkan-headers",
+		"spirv-headers"
+	    ]
+	},
+	"vulkan-tools":
+	{
+	    "name": "vulkan-tools",
+	    "description": "The Vulkan-Tools repository provides Vulkan tools and utilities.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the Vulkan-Tools repository.",
+		    "url": "johnzupin/Vulkan-Tools"
+		}
+	    },
+	    "dependencies":
+	    [
+		"vulkan-headers",
+		"vulkan-loader"
+	    ]
+	},
+	"lunarg-tools":
+	{
+	    "name": "lunarg-tools",
+	    "description": "The VulkanTools repository provides a collection of Vulkan tools and utilities created by LunarG.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the VulkanTools repository.",
+		    "url": "LunarG/VulkanTools"
+		}
+	    },
+	    "dependencies":
+	    [
+		"vulkan-headers",
+		"vulkan-loader",
+		"vulkan-validationlayers"
+	    ]
+	},
+	"gfxreconstruct":
+	{
+	    "name": "gfxreconstruct",
+	    "description": "The gfxreconstruct repository provides a graphic tracing tools",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "0.9.17+4",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the gfxreconstruct repository.",
+		    "url": "johnzupin/gfxreconstruct"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"directxshadercompiler":
+	{
+	    "name": "directxshadercompiler",
+	    "description": "DirectX Shader Compiler",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "bef540d360d5b737c83678ffde572820d1e12ec4",
+	    "package_version": "1.4.0.2274-1406",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the directxshadercompiler repository.",
+		    "url": "johnzupin/gfxreconstruct"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"spirv-reflect":
+	{
+	    "name": "spirv-reflect",
+	    "description": "SPIRV-Reflect is a lightweight library that provides a C/C++ reflection API for SPIR-V shader bytecode in Vulkan applications",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.0.0+198",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the spirv-reflect repository.",
+		    "url": "johnzupin/SPIRV-Reflect"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"vulkan-extensionlayer":
+	{
+	    "name": "vulkan-extensionlayer",
+	    "description": "Layers proiding Vulkan features when native support is unavailable",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "sdk-1.3.239",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the vulkan-extensionlayer repository.",
+		    "url": "johnzupin/Vulkan-ExtensionLayer"
+		}
+	    },
+	    "dependencies":
+	    [ "vulkan-headers" ]
+	},
+	"robin-hood-hashing":
+	{
+	    "name": "robin-hood-hashing",
+	    "description": "a platform independent replacement for std::unordered_map/std::unordered_set",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "3.11.5",
+	    "package_version": "3.11.5",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the robin-hood-hashing repository.",
+		    "url": "johnzupin/robin-hood-hashing"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"vulkan-profiles":
+	{
+	    "name": "vulkan-profiles",
+	    "description": "The Vulkan Profiles Tools are a collection of tools for Vulkan application developers to leverage Vulkan Profiles while developing a Vulkan application.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "master",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the VulkanProfiles repository.",
+		    "url": "johnzupin/VulkanProfiles"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"volk":
+	{
+	    "name": "volk",
+	    "description": "volk is a meta-loader for Vulkan.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "master",
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the volk repository.",
+		    "url": "johnzupin/volk"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"vma":
+	{
+	    "name": "vma",
+	    "description": "Easy to integrate Vulkan memory allocation library.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "v3.0.1",
+	    "package_version": "3.0.1",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "amd",
+		    "description": "The authoritative remote for the vma repository.",
+		    "url": "johnzupin/VulkanMemoryAllocator"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"vulkancapsviewer":
+	{
+	    "name": "vulkancapsviewer",
+	    "description": "Application to display hardware implementation details for GPUs supporting the Vulkan API by Khronos.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "master",
+	    "package_version": "3.28",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "khronos",
+		    "description": "The authoritative remote for the volk repository.",
+		    "url": "johnzupin/VulkanCapsViewer"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"valijson":
+	{
+	    "name": "valijson",
+	    "description": "Valijson provides a simple validation API that allows you to load JSON Schemas, and validate documents loaded by one of several supported parser libraries.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "branch": "master",
+	    "package_version": "1.0-4",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"upstream":
+		{
+		    "name": "tristanpenman",
+		    "description": "The authoritative remote for the valijson repository.",
+		    "url": "johnzupin/valijson"
+		}
+	    },
+	    "dependencies":
+	    [ "" ]
+	},
+	"vulkan-sdk":
+	{
+	    "name": "vulkan-sdk",
+	    "description": "The Vulkan SDK repository is an aggregate package which pulls in all Vulkan SDK dependencies.",
+	    "build_distros":  {
+		"focal": "ubuntu/focal",
+		"jammy": "ubuntu/jammy"
+	    },
+	    "package_version": "1.3.239.0",
+	    "package_build_version": "rc1",
+	    "remotes":
+	    {
+		"origin":
+		{
+		    "name": "ubuntu",
+		    "description": "The authoritative remote for the Vulkan SDK package.",
+		    "url": "johnzupin/vulkan-sdk-virtual-package"
+		}
+	    },
+	    "dependencies":
+	    [
+		"spirv-headers",
+		"spirv-tools",
+		"spirv-cross",
+		"glslang",
+		"shaderc",
+		"vulkan-headers",
+		"vulkan-loader",
+		"vulkan-validationlayers",
+		"vulkan-tools",
+		"lunarg-tools",
+		"gfxreconstruct",
+		"dxc",
+		"spirv-reflect",
+		"vulkan-extensionlayer",
+		"volk",
+		"vma",
+		"vulkancapsviewer",
+		"valijson"
+	    ]
+	}
+    }
+}
