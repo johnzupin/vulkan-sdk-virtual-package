@@ -33,7 +33,8 @@ Depends: vulkan-headers (>= 1.3.296.0~rc1),
  vma (>= 3.1.0~rc1),
  vulkancapsviewer (>= 3.42~rc1),
  vulkan-utility-libraries-dev (>= 1.3.296.0~rc1),
- crashdiagnosticlayer (>= 1.3.296.0~rc1)
+ crashdiagnosticlayer (>= 1.3.296.0~rc1),
+ slang (>= 2024.13~rc1)
 Description: Tools and runtime for Vulkan development.The Vulkan
  SDK provides the development and runtime components
  required to build, run, and debug Vulkan applications. This SDK is
