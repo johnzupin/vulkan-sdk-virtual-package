@@ -1,3 +1,10 @@
+vulkan-sdk (1.4.304.0~rc1-1lunarg22.04-1) jammy; urgency=medium
+
+  [ John Zupin ]
+  * vulkan sdk 1.4.304.0
+
+ -- john <john@odin>  Mon, 06 Jan 2025 17:47:12 -0700
+
 vulkan-sdk (1.4.303.0~rc1-1lunarg22.04-1) jammy; urgency=medium
 
   [ John Zupin ]
