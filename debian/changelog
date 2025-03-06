@@ -1,3 +1,11 @@
+vulkan-sdk (1.4.309.0~rc1-1lunarg24.04-1) noble; urgency=medium
+
+  [ John Zupin ]
+  * publish 1.4.309.0 SDK
+  * 1.4.309.0: fix version for slang
+
+ -- john <john@odin>  Thu, 06 Mar 2025 11:36:31 -0700
+
 vulkan-sdk (1.4.304.0~rc1-1lunarg24.04-1) noble; urgency=medium
 
   [ John Zupin ]
