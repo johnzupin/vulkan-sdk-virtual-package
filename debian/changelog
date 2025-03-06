@@ -1,3 +1,11 @@
+vulkan-sdk (1.4.309.0~rc1-1lunarg22.04-1) jammy; urgency=medium
+
+  [ John Zupin ]
+  * publish 1.4.309.0 SDK
+  * 1.4.309.0: fix version for slang
+
+ -- john <john@odin>  Thu, 06 Mar 2025 11:34:55 -0700
+
 vulkan-sdk (1.4.304.0~rc1-1lunarg22.04-1) jammy; urgency=medium
 
   [ John Zupin ]
