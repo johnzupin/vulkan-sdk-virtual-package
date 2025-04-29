@@ -1,3 +1,10 @@
+vulkan-sdk (1.4.313.0~rc1-1lunarg24.04-1) noble; urgency=medium
+
+  [ John Zupin ]
+  * debian: updates for 1.4.313.0 SDK
+
+ -- john <john@odin>  Tue, 29 Apr 2025 12:19:34 -0600
+
 vulkan-sdk (1.4.309.0~rc1-1lunarg24.04-1) noble; urgency=medium
 
   [ John Zupin ]
