@@ -1,3 +1,10 @@
+vulkan-sdk (1.4.313.0~rc2-1lunarg24.04-1) noble; urgency=medium
+
+  [ John Zupin ]
+  * remove dxc build because of an issue
+
+ -- john <john@odin>  Wed, 30 Apr 2025 10:06:05 -0600
+
 vulkan-sdk (1.4.313.0~rc1-1lunarg24.04-1) noble; urgency=medium
 
   [ John Zupin ]
