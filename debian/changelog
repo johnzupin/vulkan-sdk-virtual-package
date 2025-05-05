@@ -1,3 +1,10 @@
+vulkan-sdk (1.4.313.0~rc3-1lunarg24.04-1) noble; urgency=medium
+
+  [ John Zupin ]
+  * 1.4.313.0 update gfxr
+
+ -- john <john@odin>  Mon, 05 May 2025 15:20:29 -0600
+
 vulkan-sdk (1.4.313.0~rc2-1lunarg24.04-1) noble; urgency=medium
 
   [ John Zupin ]
